@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "mod.arcomit.slashblade_acceleratedrendering.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "slashblade_acceleratedrendering.refmap.json",
+  "plugin": "mod.arcomit.slashblade_acceleratedrendering.mixin.MixinPlugin",
+  "mixins": [
+  ],
+  "client": [
+    "GroupObjectMixin",
+    "LayerMainBladeMixin",
+    "SlashBladeTEISRMixin",
+    "BladeItemEntityRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
