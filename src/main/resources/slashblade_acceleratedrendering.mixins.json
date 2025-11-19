@@ -8,6 +8,7 @@
   "mixins": [
   ],
   "client": [
+    "BladeRenderStateMixin",
     "GroupObjectMixin",
     "LayerMainBladeMixin",
     "SlashBladeTEISRMixin",

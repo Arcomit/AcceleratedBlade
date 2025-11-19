@@ -98,9 +98,13 @@ dependencies {
 
     implementation fg.deobf("curse.maven:configured-457570:5180900")
 
+    //Nbtedit
+    runtimeOnly fg.deobf("curse.maven:nbtedit-reborn-678133:5984630")
+
     //拔刀剑重锋,玩家动画库
     //implementation fg.deobf("curse.maven:slashblade-resharped-1022428:7131890")
-    implementation fg.deobf("curse.maven:slashblade-resharped-1022428:7073488")
+    implementation fg.deobf("curse.maven:slashblade-resharped-1022428:6548163")
+    //implementation fg.deobf("curse.maven:slashblade-resharped-1022428:7073488")
     implementation fg.deobf("curse.maven:playeranimator-658587:4587214")
 
     implementation fg.deobf("curse.maven:l2library-620203:6806000")
@@ -117,6 +121,7 @@ dependencies {
     //光影
     runtimeOnly fg.deobf("curse.maven:embeddium-908741:5681725")
     runtimeOnly fg.deobf("curse.maven:oculus-581495:6020952")
+    runtimeOnly fg.deobf("curse.maven:rubidium-extra-654373:6101745")
 
     //假人
     runtimeOnly fg.deobf("curse.maven:selene-499980:6023899")

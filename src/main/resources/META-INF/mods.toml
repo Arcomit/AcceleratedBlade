@@ -24,6 +24,13 @@ mandatory = true
 versionRange = "[0.1.4,)"
 ordering = "NONE"
 side = "BOTH"
+#加速渲染
+[[dependencies."${mod_id}"]]
+modId = "acceleratedrendering"
+mandatory = true
+versionRange = "*"
+ordering = "NONE"
+side = "BOTH"
 [[dependencies."${mod_id}"]] #optional
 modId = "forge" #mandatory
 mandatory = true #mandatory

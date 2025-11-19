@@ -11,6 +11,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
 import lombok.experimental.ExtensionMethod;
+import mod.arcomit.slashblade_acceleratedrendering.client.ClientConfig;
 import mod.arcomit.slashblade_acceleratedrendering.utils.AcceleratedUtils;
 import mods.flammpfeil.slashblade.client.renderer.model.obj.Face;
 import mods.flammpfeil.slashblade.client.renderer.model.obj.GroupObject;
@@ -53,7 +54,7 @@ public class GroupObjectMixin implements IAcceleratedRenderer<Void> {
             CallbackInfo   ci
     ) {
         var extension = vertexConsumer.getAccelerated();
-        if (AcceleratedEntityRenderingFeature.isEnabled()
+        if (ClientConfig.ENABLES_ACCELERATED_RENDERING.get() && AcceleratedEntityRenderingFeature.isEnabled()
                 && AcceleratedEntityRenderingFeature.shouldUseAcceleratedPipeline()
                 && (
                         CoreFeature.isRenderingLevel()
